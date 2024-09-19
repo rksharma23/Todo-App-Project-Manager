@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <nav class="navigation">
+        <h1>Project Manager</h1>
+        <button id="open-form-btn">Add Project</button>
+    </nav>
+    <main class="form-container" id="form-container">
+        <form>
+            <h1 class="mb">Add New Project</h1>
+
+            <label>Project Title</label>
+            <input type="text" placeholder="Enter Title" class="mb" id="project-title" required="true">
+
+            <label>Project Description</label>
+            <textarea name="project-desc" id="project-desc" class="mb" rows="10" cols="10"></textarea>
+
+            <div class="button-container">
+                <button class="submit-btn" id="submit-btn">Submit</button>
+                <button class="close-btn" id="close-btn">Close</button>
+            </div>
+        </form>
+    </main>
+    <section class="active-project project-container">
+        <h2>Active Projects</h2>
+        <div class="card-container" id="active-card-container">
+            <!-- <div class="card">
+                <div class="upper-part">
+                    <h3>Sample Title</h3>
+                    <button class="del-btn">X</button>
+                </div>
+                <p>Sample Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio corporis voluptatum atque nesciunt rerum dolore dicta iure ullam! Est?</p>
+                <button id="mrk-done-btn">Mark Done</button>
+            </div>
+
+            <div class="card">
+                <div class="upper-part">
+                    <h3>Sample Title</h3>
+                    <button class="del-btn">X</button>
+                </div>
+                <p>Sample Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio corporis voluptatum atque nesciunt rerum dolore dicta iure ullam! Est?</p>
+                <button id="mrk-done-btn">Mark Done</button>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="completed-project project-container">
+        <h2>Completed Projects</h2>
+        <div class="card-container" id="completed-card-container"> 
+            <!-- <div class="card">
+                <div class="upper-part">
+                    <h3>Sample Title</h3>
+                    <button class="del-btn">X</button>
+                </div>
+                <p>Sample Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio corporis voluptatum atque nesciunt rerum dolore dicta iure ullam! Est?</p>
+                <button id="mrk-active-btn">Mark Active</button>
+            </div>
+            <div class="card">
+                <div class="upper-part">
+                    <h3>Sample Title</h3>
+                    <button class="del-btn">X</button>
+                </div>
+                <p>Sample Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio corporis voluptatum atque nesciunt rerum dolore dicta iure ullam! Est?</p>
+                <button id="mrk-active-btn">Mark Active</button>
+            </div> -->
+        </div>
+    </section>
+
+</body>
+<script src="app.js"></script>
+</html>
